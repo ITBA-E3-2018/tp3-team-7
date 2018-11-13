@@ -1,0 +1,75 @@
+% Task 3
+\input{baseHoja.tex}
+\begin{document}
+
+\section*{Task 3}
+
+In this section, is implemented a Moore's state
+machine already defined, as shown below.
+
+% FOTO DE LA DE MOORE 3A
+
+Using the diagram, the following table of transitions 
+is made.
+
+% TABLA DE MOORE 3A
+
+With the transitions, using Karnaugh's maps, the 
+functions for the states and the output are made
+as shown below.
+
+% KARNAUGH 3A
+
+With the functions, the state machine is implemented 
+using two D Flip Flops as follows. 
+
+% CIRCUIT MOORE 3A
+
+Now the same system is implemented using a Mealy's 
+state machine, wich resulting diagram is shown below.
+
+% DIAGRAMA MEALY 3B
+
+Notice that it requires one less state than Moore's
+machine because of the direct connection of the 
+from the input to the output. The following 
+transition table is made using the diagram.
+
+% TABLA 3B
+
+With the table, using Karnaugh's maps, are made 
+the functions for the states and the output.
+
+% KARNAUGH 3B
+
+With the defined functions, the state machine is 
+implemented using one D Flip Flop as shown below.
+
+% CIRCUITO MEALY 3B
+
+Since the internal logic works with 3.3V power supply, 
+and the external signals work with 5V, level shifters 
+are implemented using BJT transistors. For adapting
+the inputs of CLK and W, the circuit is shown 
+below. 
+
+% LEVEL SHIFTER INPUTS
+
+And for the outputs (Moore and Mealy machines) 
+the driver circuit is as shown below.
+
+% CIRCUITO DE LED
+
+The design of the circuits with the corresponding 
+calculations are included in the $Annex$.
+
+\newpage
+
+\section*{Annex}
+\subsection*{Level shifter for inputs}
+
+\subsection*{Level shifter for outputs}
+
+\subsection*{Driver for output leds}
+
+\end{document}

@@ -1,0 +1,55 @@
+% Task 2
+\input{baseHoja.tex}
+\begin{document}
+
+\section*{Task 2}
+
+In this section, the objetive is to recognize a 
+sequence of 4 bits that come in a synchronized
+way. If the sequence is recognized, an output 
+is turned on. Using a Moore's state machine,
+the resulting diagram is as shown below.
+
+% DIAGRAMA MOORE 2A
+
+Notice that when the sequence is recognized, 
+the machine needs to be reseted to detect a 
+new combination. With the diagram, the following transition table 
+is made.
+
+% TABLA 2A
+
+Using Karnaugh's maps, the functions for
+the diferent states and the output are made
+as follows.
+
+% KARNAUGH 2A
+
+With the functions, the state machine is 
+implemented using 3 D Flip Flops as shown below.
+
+% CIRCUITO MOORE 2A
+
+Now, the same system is implemented using a Mealy's 
+state machine, wich resulting diagram is shown below.
+
+% DIAGRAMA MEALY 2B
+
+Using the diagram, a table with the state 
+transitions is made.
+
+% TABLA 2B
+
+Using Karnaugh's maps, the functions for the 
+states and the output are made below.
+
+% KARNAUGH 2B
+
+With the defined functions, the state machine 
+is implemented with 2 D Flip Flops. In this case
+is used one less flip flop, and the machine can
+used again without reset it.
+
+% CIRCUITO MEALY 2B
+
+\end{document}

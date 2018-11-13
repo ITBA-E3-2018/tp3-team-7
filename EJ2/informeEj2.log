@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  13 NOV 2018 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  13 NOV 2018 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ1/informeEj1.tex
-(/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ1/informeEj1.tex
+**/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ2/informeEj2.tex
+(/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ2/informeEj2.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (./baseHoja.tex
@@ -1142,8 +1142,8 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(./informeEj1.aux)
-\openout1 = `informeEj1.aux'.
+(./informeEj2.aux)
+\openout1 = `informeEj2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -1268,16 +1268,6 @@ e
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 16.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)
-Overfull \hbox (0.15381pt too wide) in paragraph at lines 31--34
-[]\T1/futs/m/n/12 From the ta-ble, us-ing Kar-naugh's maps the func-tions for t
-he state vari-ables and the two pumps
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1287,19 +1277,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./informeEj1.aux) ) 
+] (./informeEj2.aux) ) 
 Here is how much of TeX's memory you used:
- 14789 strings out of 494847
- 277809 string characters out of 6179079
- 313784 words of memory out of 5000000
- 17775 multiletter control sequences out of 15000+600000
- 18567 words of font info for 25 fonts, out of 8000000 for 9000
+ 14765 strings out of 494847
+ 277443 string characters out of 6179079
+ 312784 words of memory out of 5000000
+ 17756 multiletter control sequences out of 15000+600000
+ 18103 words of font info for 23 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  57i,11n,54p,491b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
 c}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on informeEj1.pdf (1 page, 30134 bytes).
+Output written on informeEj2.pdf (1 page, 29064 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  14 compressed objects within 1 object stream
