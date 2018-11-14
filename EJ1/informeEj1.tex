@@ -105,14 +105,59 @@ the Moore machine.
 Using one bit for the states, a table of transitions
 is made as follows.
 
-% TABLA 1B
+\begin{figure}[H]
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|c||c|c|c|c|}
+    \hline 
+    \multicolumn{2}{|c|}{Estado Actual} & \multicolumn{4}{c||}{Estado Siguiente} & \multicolumn{4}{c|}{Salidas}\tabularnewline
+    \hline 
+    \hline 
+    \multirow{3}{*}{} & \multirow{3}{*}{y} & \multicolumn{4}{c||}{S - I} & \multicolumn{4}{c|}{S - I}\tabularnewline
+    \cline{3-10} 
+     &  & 00 & 01 & 10 & 11 & 00 & 01 & 10 & 11\tabularnewline
+    \cline{3-10} 
+     &  & \multicolumn{4}{c||}{y} & B1 - B2 & B1 - B2 & B1 - B2 & B1 - B2\tabularnewline
+    \hline 
+    A & 0 & A & B & A & X & 11 & 10 & XX & 00\tabularnewline
+    \hline 
+    B & 1 & B & A & B & X & 11 & 01 & XX & 00\tabularnewline
+    \hline 
+    \end{tabular}
+    \caption{Mealy state machine - Transitions}
+\end{centering}
+\end{figure}
 
-Using again Karnaugh's maps, the functiosn for
+Using again Karnaugh's maps, the functions for
 the state variable and the two pumps outputs are
 made as shown below.
 
-% DIAGRAMAS DE KARNAUGH 1B
-
+\begin{center}
+     \begin{Karnaughvuit}
+        \minterms{1,4,7}
+         \maxterms{0,3,5}
+        \indeterminats{2,6}
+        \implicantsol{1}{red}
+        \implicant{7}{6}{green}
+        \implicantcostats{4}{6}{blue}
+     \end{Karnaughvuit}
+     \begin{Karnaughvuit}
+        \minterms{0,1,4}
+         \maxterms{3,5,7}
+        \indeterminats{2,6}
+        \implicant{0}{1}{red}
+        \implicant{0}{4}{green}
+     \end{Karnaughvuit}
+     \begin{Karnaughvuit}
+        \minterms{0,4,5}
+         \maxterms{1,3,7}
+        \indeterminats{2,6}
+        \implicant{0}{4}{red}
+        \implicant{4}{5}{green}
+     \end{Karnaughvuit}
+\end{center}
+Where from the left table $Y = \overline{y} \cdot \overline{S} \cdot I + y \cdot \overline{I} + y \cdot S$. 
+From the center table $B_1 = \overline{y} \cdot \overline{S} + \overline{S} \cdot \overline{I}$, and from the 
+right table $B_2 = \overline{S} \cdot \overline{I} + y \cdot \overline{S}$.
 Finally, the state machine is implemented using
 one D Flip Flop.
 
