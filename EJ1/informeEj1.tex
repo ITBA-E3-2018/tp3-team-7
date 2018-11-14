@@ -1,7 +1,8 @@
 % Task 1
 \input{baseHoja.tex}
+\input{BaseKarnaugh.tex}
 \begin{document}
-
+\providecommand{\tabularnewline}{\\}
 \section*{Task 1}
 
 In this section, a state machine will be 
@@ -21,28 +22,81 @@ to take are as follows:
 With this in mind, a Moore machine is 
 developed as follows.
 
-% DIBUJO DE MOORE 1A
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.8\textwidth]{Graficos1/1a_fsm.png}
+    \par\end{centering}
+    \caption{Moore state machine diagram}
+\end{figure}
 
 Using two bits to asign the states, a table 
 of transitions is made, as shown below.
 
-% DIBUJO DE LA TABLA 1A
+\begin{figure}[H]
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|c||c|c|}
+    \hline 
+    \multicolumn{2}{|c|}{Estado Actual} & \multicolumn{4}{c||}{Estado Siguiente} & \multicolumn{2}{c|}{Salidas}\tabularnewline
+    \hline 
+    \hline 
+    \multirow{2}{*}{} & \multirow{2}{*}{y2 - y1} & \multicolumn{4}{c||}{S - I} & \multirow{2}{*}{B1} & \multirow{2}{*}{B2}\tabularnewline
+    \cline{3-6} 
+     &  & 00 & 01 & 10 & 11 &  & \tabularnewline
+    \hline 
+    A & 00 & X & C & X & A & 0 & 0\tabularnewline
+    \hline 
+    B & 01 & D & C & X & A & 0 & 1\tabularnewline
+    \hline 
+    C & 10 & D & B & X & A & 1 & 0\tabularnewline
+    \hline 
+    D & 11 & D & B & X & X & 1 & 1\tabularnewline
+    \hline 
+    \end{tabular}
+    \caption{Moore state machine - Transitions}
+\end{centering}
+\end{figure}
+
+\newpage
 
 From the table, using Karnaugh's maps the 
 functions for the state variables and the 
 two pumps outputs are made as shown below.
 
-% DIAGRAMAS DE KARNAUGH 1A
+\begin{center}
+\begin{Karnaugh}
+     \contingut{X,1,1,1,1,1,0,0,X,X,X,X,0,0,0,X}    
+     \implicant{0}{5}{red}
+     \implicantdaltbaix[3pt]{0}{10}{blue}
+\end{Karnaugh}
+\begin{Karnaugh}
+    \contingut{X,1,1,1,1,1,0,0,X,X,X,X,0,0,0,X}       
+    \implicant{3}{6}{red}
+    \implicantdaltbaix[3pt]{0}{10}{blue}
+\end{Karnaugh}
+\end{center}
 
+Where from the left table $Y_2 = \overline{I} + \overline{S} \cdot \overline{y_2}$, 
+and from the right $Y_1 = \overline{I} + \overline{S} \cdot y_2$. And for
+the outputs, $B_1 = y_2$ and $B_2 = y_1$.  
 Finally, the state machine is implemented using 
 D Flip Flops:
 
-% CIRCUITO MOORE 1A
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{Graficos1/1a_Compuertas_Moore.png}
+    \par\end{centering}
+    \caption{Moore state machine - Circuit implementation}
+\end{figure}
 
 On the other side, the same system is implemented 
 now using a Mealy state machine, as shown below.
 
-% DIBUJO DE MEALY 1B
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{Graficos1/1b_fsm.png}
+    \par\end{centering}
+    \caption{Mealy state machine diagram}
+\end{figure}
 
 Notice that the direct connection between the 
 input and the pumps outputs reduces the number 
@@ -62,6 +116,11 @@ made as shown below.
 Finally, the state machine is implemented using
 one D Flip Flop.
 
-% CIRCUITO MEALY 1B
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{Graficos1/1b_Compuertas_Mealy.png}
+    \par\end{centering}
+    \caption{Mealy state machine - Circuit implementation}
+\end{figure}
 
 \end{document}
