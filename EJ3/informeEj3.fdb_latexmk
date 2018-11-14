@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1542223114 "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ3/informeEj3.tex" "informeEj3.pdf" "informeEj3" 1542223115
+["pdflatex"] 1542225579 "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ3/informeEj3.tex" "informeEj3.pdf" "informeEj3" 1542225580
   "/etc/texmf/web2c/texmf.cnf" 1534563970 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ3/informeEj3.tex" 1542223114 6973 48f366575f8de432436e289f7df3d66f ""
+  "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ3/informeEj3.tex" 1542225579 5902 5fa106f56df69824e060ab7cc93e7628 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1480098696 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -171,7 +171,6 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1534563989 2396367 416e5eec178b0463bd029c15e8a964c5 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539528420 812193 0b73963f09f97ac1ac9f5986a9a9a1ad ""
-  "BaseKarnaugh3.tex" 1542217453 7405 2c1326ebf18ab0bd34ba58627a0e7ba4 ""
   "Graficos3/3a_Compuertas_Moore.png" 1542127002 12206 632d6815697e114725618194ff208b6d ""
   "Graficos3/3a_fsm.png" 1542123860 125569 0c059f0b55281e30c5a6ccf93ba52a71 ""
   "Graficos3/3b_Compuertas_Mealy.png" 1542127167 4770 b8c2ca7a471b50039cadf5a91b2e0227 ""
@@ -180,9 +179,9 @@
   "Graficos3/LED_Driver.png" 1542218456 16184 32fb665498eb7de9041ace9306cb3c17 ""
   "Graficos3/W_Driver.png" 1542217940 37273 4ecd58e11d5328c4bb7edb77d4d17f0b ""
   "baseHoja.tex" 1542171720 735 9c730aa763c2dd92ed16040155c40f1a ""
-  "informeEj3.aux" 1542223115 1566 4146e0a0c52bcc6a50fd452f931eca47 ""
-  "informeEj3.tex" 1542223114 6973 48f366575f8de432436e289f7df3d66f ""
+  "informeEj3.aux" 1542225580 1325 fc8cc800ef7017a8f2a14d79779fea8a ""
+  "informeEj3.tex" 1542225579 5902 5fa106f56df69824e060ab7cc93e7628 ""
   (generated)
-  "informeEj3.aux"
-  "informeEj3.pdf"
   "informeEj3.log"
+  "informeEj3.pdf"
+  "informeEj3.aux"

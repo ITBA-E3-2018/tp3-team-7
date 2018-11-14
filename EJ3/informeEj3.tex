@@ -1,6 +1,5 @@
 % Task 3
 \input{baseHoja.tex}
-\input{BaseKarnaugh3.tex}
 \begin{document}
 
 \section*{Task 3}
@@ -39,30 +38,9 @@ is made.
     \caption{Moore state machine - Transitions}
 \end{center}
 \end{figure}
-With the transitions, using Karnaugh's maps, the 
-functions for the states and the output are made
-as shown below.
-
-\begin{figure}[H]
-    \begin{center}
-         \begin{Karnaughvuit}
-            \minterms{5,6}
-             \maxterms{0,1,2,4}
-             \indeterminats{3,7}
-            \implicant{7}{6}{red}
-            \implicant{5}{7}{green}
-         \end{Karnaughvuit}
-         \begin{Karnaughvuit}
-            \minterms{2,4,7}
-            \maxterms{0,1,3,5,6}
-            \implicantsol{2}{red}
-            \implicantsol{4}{green}
-            \implicantsol{7}{blue}
-         \end{Karnaughvuit}
-         \caption{Maps for $Y_2$ (left) and $Y_1$ (right) functions.}
-    \end{center}
-    \end{figure}
-Where $Y_2 = W \cdot y_1 + W \cdot y_2$, and $Y_1 = W \cdot \overline{y_2} \cdot \overline{y_1}$. 
+With the transitions, using Karnaugh's maps (see resolution in $Annex$), the 
+functions for the states and the output result as follows: $Y_2 = W \cdot y_1 + W \cdot y_2$, and $Y_1 = W \cdot \overline{y_2} \cdot \overline{y_1}$. 
+\newpage
 From the transitions table, it is simple to see that $Z = y_1$.
 With the functions, the state machine is implemented 
 using two D Flip Flops as follows. 
@@ -86,7 +64,9 @@ state machine, wich resulting diagram is shown below.
 
 Notice that it requires one less state than Moore's
 machine because of the direct connection of the 
-from the input to the output. The following 
+from the input to the output. 
+\newpage
+The following 
 transition table is made using the diagram.
 
 \begin{figure}[H]
@@ -109,26 +89,8 @@ transition table is made using the diagram.
     \end{center}
 \end{figure}
 
-With the table, using Karnaugh's maps, are made 
-the functions for the states and the output.
-
-\begin{figure}[H]
-    \begin{center}
-     \begin{Karnaughquatre}
-         \minterms{1,3}
-        \maxterms{0,2}
-        \implicant{1}{3}{red}
-     \end{Karnaughquatre}
-     \begin{Karnaughquatre}
-        \minterms{1}
-       \maxterms{0,2,3}
-       \implicantsol{1}{red}
-    \end{Karnaughquatre}
-     \caption{Maps for $Y$ (left) and $Z$ (right)}
-    \end{center}
-\end{figure}
-Where from the left map $Y = W$, and from the right
-table $Z = \overline{y} \cdot W$.
+With the table, using Karnaugh's maps (see resolution in $Annex$), are made 
+the functions for the states and the output as follows: $Y = W$, and $Z = \overline{y} \cdot W$.
 With the defined functions, the state machine is 
 implemented using one D Flip Flop as shown below.
 
@@ -170,12 +132,9 @@ the driver circuit is as shown below.
     \caption{Driver for LED output.}
 \end{figure}
 
-The design of the circuits with the corresponding 
-calculations are included in the $Annex$.
 
 \newpage
 
-\section*{Annex}
 \subsection*{Level shifter for inputs}
 From the implemented circuit:
 \begin{figure}[H]

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1542225033 "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ2/informeEj2.tex" "informeEj2.pdf" "informeEj2" 1542225034
+["pdflatex"] 1542225244 "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/Anexos/Anexo2.tex" "Anexo2.pdf" "Anexo2" 1542225246
   "/etc/texmf/web2c/texmf.cnf" 1534563970 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/EJ2/informeEj2.tex" 1542225033 4065 9ff523a0a3d0ba3f38c8be76b08a1d55 ""
+  "/home/marce/Escritorio/Electro3_TPS/tp3-team-7/Anexos/Anexo2.tex" 1542225244 2125 f324ed0abd85917d4dfd19d3502729fa ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1480098696 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -169,14 +169,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1534563989 2396367 416e5eec178b0463bd029c15e8a964c5 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539528420 812193 0b73963f09f97ac1ac9f5986a9a9a1ad ""
-  "Graficos2/2a_Compuertas_Moore.png" 1542128970 32597 b18ac2e5de58e25decb7249b72cc3142 ""
-  "Graficos2/2a_fsm.png" 1542123350 21674 13618fe87a5ce076b8add032e9bbd9cc ""
-  "Graficos2/2b_Compuertas_Mealy.png" 1542151909 32547 33cf0aba671b0da2b24fca80b2cb6c3f ""
-  "Graficos2/2b_fsm.png" 1542127873 19541 b0d8b72e6c68ff11f4313e0cbb6e692e ""
+  "Anexo2.aux" 1542225246 315 23184fb8ea7d98db25d0ec115d2d95e3 ""
+  "Anexo2.tex" 1542225244 2125 f324ed0abd85917d4dfd19d3502729fa ""
+  "BaseKarnaugh2.tex" 1542209928 7405 94da7840c8fe27d140ad1032549282e8 ""
   "baseHoja.tex" 1542171720 735 9c730aa763c2dd92ed16040155c40f1a ""
-  "informeEj2.aux" 1542225034 700 76f318cefde81cc0eeb3a411ab63d84e ""
-  "informeEj2.tex" 1542225033 4065 9ff523a0a3d0ba3f38c8be76b08a1d55 ""
   (generated)
-  "informeEj2.pdf"
-  "informeEj2.log"
-  "informeEj2.aux"
+  "Anexo2.aux"
+  "Anexo2.log"
+  "Anexo2.pdf"
