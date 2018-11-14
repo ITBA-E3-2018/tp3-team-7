@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  13 NOV 2018 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.14)  14 NOV 2018 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1057,6 +1057,21 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen169
+\extrarowheight=\dimen170
+\NC@list=\toks37
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip48
+\multirow@cntb=\count122
+\multirow@dima=\skip49
+\bigstrutjot=\dimen171
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
@@ -1068,15 +1083,15 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip46
-\f@nch@O@elh=\skip47
-\f@nch@O@erh=\skip48
-\f@nch@O@olh=\skip49
-\f@nch@O@orh=\skip50
-\f@nch@O@elf=\skip51
-\f@nch@O@erf=\skip52
-\f@nch@O@olf=\skip53
-\f@nch@O@orf=\skip54
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -1130,11 +1145,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count122
-\U@D=\dimen169
+\babel@savecnt=\count123
+\U@D=\dimen172
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count123
+\bbl@dirlevel=\count124
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -1142,55 +1157,57 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(./informeEj3.aux)
+(./BaseKarnaugh3.tex) (./informeEj3.aux)
 \openout1 = `informeEj3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 3.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 4.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 3.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 4.
+
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 3.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 3.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Font Info:    Redeclaring math symbol \iintop on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \iintop on input line 4.
+LaTeX Font Info:    Redeclaring math symbol \iiintop on input line 4.
+LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 4.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1228,17 +1245,17 @@ LaTeX Font Info:    Redeclaring math symbol \oiintop on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen170
+\scratchcounter=\count125
+\scratchdimen=\dimen173
 \scratchbox=\box41
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen171
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks38
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen174
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks39
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1267,40 +1284,52 @@ e
 ))
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 64
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
+<Graficos3/3a_fsm.png, id=4, 800.39024pt x 482.40225pt>
+File: Graficos3/3a_fsm.png Graphic file (type png)
+<use Graficos3/3a_fsm.png>
+Package pdftex.def Info: Graficos3/3a_fsm.png  used on input line 13.
+(pdftex.def)             Requested size: 382.40659pt x 230.48312pt.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 23
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 23.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 23.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
+(Font)              scaled to size 6.43999pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
-LaTeX Font Info:    Try loading font information for U+esint on input line 64.
+(Font)              scaled to size 6.43999pt on input line 23.
+LaTeX Font Info:    Try loading font information for U+esint on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<Graficos3/3a_Compuertas_Moore.png, id=5, 408.52625pt x 270.00874pt>
+File: Graficos3/3a_Compuertas_Moore.png Graphic file (type png)
+<use Graficos3/3a_Compuertas_Moore.png>
+Package pdftex.def Info: Graficos3/3a_Compuertas_Moore.png  used on input line 
+72.
+(pdftex.def)             Requested size: 382.40659pt x 252.75764pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1309,26 +1338,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <./Graficos3/3a_fsm.png>]
+<Graficos3/3b_fsm.png, id=16, 412.54124pt x 226.8475pt>
+File: Graficos3/3b_fsm.png Graphic file (type png)
+<use Graficos3/3b_fsm.png>
+Package pdftex.def Info: Graficos3/3b_fsm.png  used on input line 82.
+(pdftex.def)             Requested size: 382.40659pt x 210.28062pt.
+[2 <./Graficos3/3a_Compuertas_Moore.png> <./Graficos3/3b_fsm.png>]
+<Graficos3/3b_Compuertas_Mealy.png, id=22, 322.20375pt x 121.45375pt>
+File: Graficos3/3b_Compuertas_Mealy.png Graphic file (type png)
+<use Graficos3/3b_Compuertas_Mealy.png>
+Package pdftex.def Info: Graficos3/3b_Compuertas_Mealy.png  used on input line 
+137.
+(pdftex.def)             Requested size: 382.40659pt x 144.15367pt.
+ [3 <./Graficos3/3b_Compuertas_Mealy.png>]
+<Graficos3/CLK_Driver.png, id=27, 666.69075pt x 441.44925pt>
+File: Graficos3/CLK_Driver.png Graphic file (type png)
+<use Graficos3/CLK_Driver.png>
+Package pdftex.def Info: Graficos3/CLK_Driver.png  used on input line 151.
+(pdftex.def)             Requested size: 215.10141pt x 142.42522pt.
+<Graficos3/W_Driver.png, id=28, 642.60075pt x 470.9595pt>
+File: Graficos3/W_Driver.png Graphic file (type png)
+<use Graficos3/W_Driver.png>
+Package pdftex.def Info: Graficos3/W_Driver.png  used on input line 158.
+(pdftex.def)             Requested size: 215.10141pt x 157.64485pt.
+<Graficos3/LED_Driver.png, id=29, 340.8735pt x 424.58624pt>
+File: Graficos3/LED_Driver.png Graphic file (type png)
+<use Graficos3/LED_Driver.png>
+Package pdftex.def Info: Graficos3/LED_Driver.png  used on input line 168.
+(pdftex.def)             Requested size: 143.40338pt x 178.62302pt.
+ [4 <./Graficos3/CLK_Driver.png> <./Graficos3/W_Driver.png> <./Graficos3/LED_Dr
+iver.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 69.
- [2] (./informeEj3.aux) ) 
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 179.
+File: Graficos3/CLK_Driver.png Graphic file (type png)
+<use Graficos3/CLK_Driver.png>
+Package pdftex.def Info: Graficos3/CLK_Driver.png  used on input line 183.
+(pdftex.def)             Requested size: 239.0032pt x 158.25473pt.
+File: Graficos3/LED_Driver.png Graphic file (type png)
+<use Graficos3/LED_Driver.png>
+Package pdftex.def Info: Graficos3/LED_Driver.png  used on input line 205.
+(pdftex.def)             Requested size: 143.40338pt x 178.62302pt.
+ [5] [6] (./informeEj3.aux) ) 
 Here is how much of TeX's memory you used:
- 14841 strings out of 494847
- 278710 string characters out of 6179079
- 312784 words of memory out of 5000000
- 17805 multiletter control sequences out of 15000+600000
- 46619 words of font info for 56 fonts, out of 8000000 for 9000
+ 15226 strings out of 494847
+ 285469 string characters out of 6179079
+ 334253 words of memory out of 5000000
+ 18164 multiletter control sequences out of 15000+600000
+ 48422 words of font info for 63 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 57i,11n,54p,491b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on informeEj3.pdf (2 pages, 43350 bytes).
+ 57i,17n,69p,481b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on informeEj3.pdf (6 pages, 257422 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,6 @@
 % Task 3
 \input{baseHoja.tex}
+\input{BaseKarnaugh3.tex}
 \begin{document}
 
 \section*{Task 3}
@@ -7,58 +8,167 @@
 In this section, is implemented a Moore's state
 machine already defined, as shown below.
 
-% FOTO DE LA DE MOORE 3A
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.8\textwidth]{Graficos3/3a_fsm.png}
+    \par\end{centering}
+    \caption{Moore state machine diagram}
+\end{figure}
 
 Using the diagram, the following table of transitions 
 is made.
 
-% TABLA DE MOORE 3A
-
+\begin{figure}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c||c|}
+    \hline 
+    \multicolumn{2}{|c|}{Estado Actual} & \multicolumn{2}{c||}{Estado Siguiente} & \multicolumn{1}{c|}{Salidas}\tabularnewline
+    \hline 
+    \hline 
+    \multirow{2}{*}{} & \multirow{2}{*}{y2 - y1} & \multicolumn{2}{c||}{W} & \multirow{2}{*}{Z}\tabularnewline
+    \cline{3-4} 
+     &  & \multicolumn{1}{c|}{0} & \multicolumn{1}{c||}{1} & \tabularnewline
+    \hline 
+    A & 00 & A & B & 0\tabularnewline
+    \hline 
+    B & 01 & A & C & 1\tabularnewline
+    \hline 
+    C & 10 & A & C & 0\tabularnewline
+    \hline 
+    \end{tabular}
+    \caption{Moore state machine - Transitions}
+\end{center}
+\end{figure}
 With the transitions, using Karnaugh's maps, the 
 functions for the states and the output are made
 as shown below.
 
-% KARNAUGH 3A
-
+\begin{figure}[H]
+    \begin{center}
+         \begin{Karnaughvuit}
+            \minterms{5,6}
+             \maxterms{0,1,2,4}
+             \indeterminats{3,7}
+            \implicant{7}{6}{red}
+            \implicant{5}{7}{green}
+         \end{Karnaughvuit}
+         \begin{Karnaughvuit}
+            \minterms{2,4,7}
+            \maxterms{0,1,3,5,6}
+            \implicantsol{2}{red}
+            \implicantsol{4}{green}
+            \implicantsol{7}{blue}
+         \end{Karnaughvuit}
+         \caption{Maps for $Y_2$ (left) and $Y_1$ (right) functions.}
+    \end{center}
+    \end{figure}
+Where $Y_2 = W \cdot y_1 + W \cdot y_2$, and $Y_1 = W \cdot \overline{y_2} \cdot \overline{y_1}$. 
+From the transitions table, it is simple to see that $Z = y_1$.
 With the functions, the state machine is implemented 
 using two D Flip Flops as follows. 
 
-% CIRCUIT MOORE 3A
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.8\textwidth]{Graficos3/3a_Compuertas_Moore.png}
+    \par\end{centering}
+    \caption{Moore state machine - Circuit implementation}
+\end{figure}
 
 Now the same system is implemented using a Mealy's 
 state machine, wich resulting diagram is shown below.
 
-% DIAGRAMA MEALY 3B
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.8\textwidth]{Graficos3/3b_fsm.png}
+    \par\end{centering}
+    \caption{Mealy state machine diagram}
+\end{figure}
 
 Notice that it requires one less state than Moore's
 machine because of the direct connection of the 
 from the input to the output. The following 
 transition table is made using the diagram.
 
-% TABLA 3B
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c||c|c|}
+            \hline 
+            \multicolumn{2}{|c|}{Estado Actual} & \multicolumn{2}{c||}{Estado Siguiente} & \multicolumn{2}{c|}{Salidas}\tabularnewline
+            \hline 
+            \hline 
+            \multirow{2}{*}{} & \multirow{2}{*}{y} & \multicolumn{2}{c||}{W} & \multicolumn{2}{c|}{Z}\tabularnewline
+            \cline{3-6} 
+             &  & \multicolumn{1}{c|}{0} & \multicolumn{1}{c||}{1} & W=0 & W=1\tabularnewline
+            \hline 
+            A & 0 & A & B & 0 & 1\tabularnewline
+            \hline 
+            B & 1 & A & B & 0 & 0\tabularnewline
+            \hline 
+            \end{tabular}
+        \caption{Mealy state machine - Transitions}
+    \end{center}
+\end{figure}
 
 With the table, using Karnaugh's maps, are made 
 the functions for the states and the output.
 
-% KARNAUGH 3B
-
+\begin{figure}[H]
+    \begin{center}
+     \begin{Karnaughquatre}
+         \minterms{1,3}
+        \maxterms{0,2}
+        \implicant{1}{3}{red}
+     \end{Karnaughquatre}
+     \begin{Karnaughquatre}
+        \minterms{1}
+       \maxterms{0,2,3}
+       \implicantsol{1}{red}
+    \end{Karnaughquatre}
+     \caption{Maps for $Y$ (left) and $Z$ (right)}
+    \end{center}
+\end{figure}
+Where from the left map $Y = W$, and from the right
+table $Z = \overline{y} \cdot W$.
 With the defined functions, the state machine is 
 implemented using one D Flip Flop as shown below.
 
-% CIRCUITO MEALY 3B
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.8\textwidth]{Graficos3/3b_Compuertas_Mealy.png}
+    \par\end{centering}
+    \caption{Mealy state machine - Circuit implementation}
+\end{figure}
 
+\newpage
 Since the internal logic works with 3.3V power supply, 
 and the external signals work with 5V, level shifters 
 are implemented using BJT transistors. For adapting
-the inputs of CLK and W, the circuit is shown 
+the inputs of CLK and W, the circuits are shown 
 below. 
 
-% LEVEL SHIFTER INPUTS
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.45\textwidth]{Graficos3/CLK_Driver.png}
+    \par\end{centering}
+    \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.45\textwidth]{Graficos3/W_Driver.png}
+    \par\end{centering}
+    \caption{Level shifter for W from 5V to 3.3V (VCC). The inverting gate is to compense the transistor logic inversion.}
+\end{figure}
 
 And for the outputs (Moore and Mealy machines) 
 the driver circuit is as shown below.
 
-% CIRCUITO DE LED
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.3\textwidth]{Graficos3/LED_Driver.png}
+    \par\end{centering}
+    \caption{Driver for LED output.}
+\end{figure}
 
 The design of the circuits with the corresponding 
 calculations are included in the $Annex$.
@@ -67,9 +177,46 @@ calculations are included in the $Annex$.
 
 \section*{Annex}
 \subsection*{Level shifter for inputs}
+From the implemented circuit:
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.5\textwidth]{Graficos3/CLK_Driver.png}
+    \par\end{centering}
+    \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
+\end{figure}
 
-\subsection*{Level shifter for outputs}
+Usign for $I_{SAT} = 1mA$, considerating $VCE_{SAT} = 0.2V$, 
+the equation from the out mesh:
 
-\subsection*{Driver for output leds}
+$$3.3V - VCE_{SAT} - I_{SAT}R_1 = 0$$
+$$\frac{3.3V - VCE_{SAT}}{I_{SAT}} = R_1 = 3.1K\Omega$$
+Normalizing we have $R_1 = 3.3K\Omega$.
+Considering $HFE_{MIN} = 100$, from the input mesh:
+
+$$5V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_2 = 0$$
+$$\frac{5V - VBE_{ON}}{I_C}HFE_{MIN} = R_2 = 430K\Omega$$
+Normalizing we have $R_2 = 390K\Omega$.
+
+\subsection*{Driver for output led}
+Taking the implemented circuit:
+
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.3\textwidth]{Graficos3/LED_Driver.png}
+    \par\end{centering}
+    \caption{Driver for LED output.}
+\end{figure}
+
+Usign for $I_{LED} = 10mA$, considerating $VCE_{SAT} = 0.2V$ 
+and $V{LED} = 2V$, the equation from the out mesh:
+
+$$3.3V - V_{LED} - VCE_{SAT} - I_{LED}R_3 = 0$$
+$$\frac{3.3V - V_{LED} - VCE_{SAT}}{I_{LED}} = R_3 = 110\Omega$$
+Normalizing we have $R_3 = 220\Omega$.
+Considering $HFE_{MIN} = 100$, from the input mesh:
+
+$$3.3V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_4 = 0$$
+$$\frac{3.3V - VBE_{ON}}{I_C}HFE_{MIN} = R_4 = 26K\Omega$$
+Normalizing we have $R_4 = 22K\Omega$, to guarantee saturation.
 
 \end{document}
