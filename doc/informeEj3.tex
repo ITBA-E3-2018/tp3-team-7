@@ -1,6 +1,5 @@
 % Task 3
-\input{baseHoja.tex}
-\begin{document}
+\newpage
 
 \section*{Task 3}
 
@@ -9,7 +8,7 @@ machine already defined, as shown below.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.8\textwidth]{Graficos3/3a_fsm.png}
+    \includegraphics[width=0.8\textwidth]{data/Graficos3/3a_fsm.png}
     \par\end{centering}
     \caption{Moore state machine diagram}
 \end{figure}
@@ -47,7 +46,7 @@ using two D Flip Flops as follows.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.8\textwidth]{Graficos3/3a_Compuertas_Moore.png}
+    \includegraphics[width=0.8\textwidth]{data/Graficos3/3a_Compuertas_Moore.png}
     \par\end{centering}
     \caption{Moore state machine - Circuit implementation}
 \end{figure}
@@ -57,7 +56,7 @@ state machine, wich resulting diagram is shown below.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.8\textwidth]{Graficos3/3b_fsm.png}
+    \includegraphics[width=0.8\textwidth]{data/Graficos3/3b_fsm.png}
     \par\end{centering}
     \caption{Mealy state machine diagram}
 \end{figure}
@@ -96,7 +95,7 @@ implemented using one D Flip Flop as shown below.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.8\textwidth]{Graficos3/3b_Compuertas_Mealy.png}
+    \includegraphics[width=0.8\textwidth]{data/Graficos3/3b_Compuertas_Mealy.png}
     \par\end{centering}
     \caption{Mealy state machine - Circuit implementation}
 \end{figure}
@@ -110,14 +109,14 @@ below.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.45\textwidth]{Graficos3/CLK_Driver.png}
+    \includegraphics[width=0.45\textwidth]{data/Graficos3/CLK_Driver.png}
     \par\end{centering}
     \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
 \end{figure}
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.45\textwidth]{Graficos3/W_Driver.png}
+    \includegraphics[width=0.45\textwidth]{data/Graficos3/W_Driver.png}
     \par\end{centering}
     \caption{Level shifter for W from 5V to 3.3V (VCC). The inverting gate is to compense the transistor logic inversion.}
 \end{figure}
@@ -127,7 +126,7 @@ the driver circuit is as shown below.
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.3\textwidth]{Graficos3/LED_Driver.png}
+    \includegraphics[width=0.3\textwidth]{data/Graficos3/LED_Driver.png}
     \par\end{centering}
     \caption{Driver for LED output.}
 \end{figure}
@@ -139,7 +138,7 @@ the driver circuit is as shown below.
 From the implemented circuit:
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.5\textwidth]{Graficos3/CLK_Driver.png}
+    \includegraphics[width=0.5\textwidth]{data/Graficos3/CLK_Driver.png}
     \par\end{centering}
     \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
 \end{figure}
@@ -161,7 +160,7 @@ Taking the implemented circuit:
 
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.3\textwidth]{Graficos3/LED_Driver.png}
+    \includegraphics[width=0.3\textwidth]{data/Graficos3/LED_Driver.png}
     \par\end{centering}
     \caption{Driver for LED output.}
 \end{figure}
@@ -177,4 +176,26 @@ Considering $HFE_{MIN} = 100$, from the input mesh:
 $$3.3V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_4 = 0$$
 $$\frac{3.3V - VBE_{ON}}{I_C}HFE_{MIN} = R_4 = 26K\Omega$$
 Normalizing we have $R_4 = 22K\Omega$, to guarantee saturation.
+
+
+\subsection *{Verilog tests}
+This task was tested using verilog tests. Here whe show the results of part A and part B.
+
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{data/Graficos3/3a.png}
+    \par\end{centering}
+    \caption{Mealy state machine - Verilog test results}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{data/Graficos3/3b.png}
+    \par\end{centering}
+    \caption{Moore state machine - Verilog test results}
+\end{figure}
+
+They seem correct.
+
+
 
