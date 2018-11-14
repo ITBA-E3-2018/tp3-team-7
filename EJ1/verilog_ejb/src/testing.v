@@ -2,11 +2,11 @@
 
 module testing;
 	reg I,S, clk;
-	wire B1, B2;
+	wire B1 , B2;
 		
 	
 		
-	ej1a ej1(clk, I, S , B1, B2);
+	ej1b ej1(clk, I, S , B1, B2);
 
 	initial begin
 		$dumpfile("output.vcd");
