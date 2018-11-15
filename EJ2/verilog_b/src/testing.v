@@ -4,7 +4,7 @@ module testing;
 	reg w,  clk;
 	output out;
 		
-	ej2a ej2(w, clk, out);
+	ej2b ej2(w, clk, out);
 
 	initial begin
 		$dumpfile("output.vcd");

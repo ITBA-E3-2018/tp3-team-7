@@ -8,7 +8,7 @@ module ej2a(w, clk, out);
 
 	assign conn1 = !(conn7 && conn5); //
 	assign conn2 = !(conn5 && conn4);//
-	assign conn3 = !( (!Q3) && (!conn6));//
+	assign conn3 = !( (!Q3) && (conn6));//
 	assign conn4 = !(Q1 && (!Q2) && w);//
 	assign conn5 = !(Q2 && (!Q1) && conn8);//
 	assign conn6 = !(Q2 && Q1 && w); //
