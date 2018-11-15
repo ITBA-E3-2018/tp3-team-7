@@ -1,0 +1,56 @@
+\newpage
+\section*{Annex}
+\subsection*{Karnaugh's maps for Task 1}
+For the Moore's state machine implementation:
+\begin{figure}[H]
+    \begin{center}
+    \begin{Karnaugh}
+         \contingut{X,1,1,1,1,1,0,0,X,X,X,X,0,0,0,X}    
+         \implicant{0}{5}{red}
+         \implicantdaltbaix[3pt]{0}{10}{blue}
+    \end{Karnaugh}
+    \begin{Karnaugh}
+        \contingut{X,1,1,1,1,1,0,0,X,X,X,X,0,0,0,X}       
+        \implicant{3}{6}{red}
+        \implicantdaltbaix[3pt]{0}{10}{blue}
+    \end{Karnaugh}
+    \caption{Maps for $Y_2$ (left) and $Y_1$ (right) functions.}
+    \end{center}
+    \end{figure}
+    
+    Where from the left table $Y_2 = \overline{I} + \overline{S} \cdot \overline{y_2}$, 
+    and from the right $Y_1 = \overline{I} + \overline{S} \cdot y_2$. And for
+    the outputs, $B_1 = y_2$ and $B_2 = y_1$. 
+
+For the Mealy's state machine implementation:
+
+\begin{figure}[H]
+    \begin{center}
+         \begin{Karnaughvuit}
+            \minterms{1,4,7}
+             \maxterms{0,3,5}
+            \indeterminats{2,6}
+            \implicantsol{1}{red}
+            \implicant{7}{6}{green}
+            \implicantcostats{4}{6}{blue}
+         \end{Karnaughvuit}
+         \begin{Karnaughvuit}
+            \minterms{0,1,4}
+             \maxterms{3,5,7}
+            \indeterminats{2,6}
+            \implicant{0}{1}{red}
+            \implicant{0}{4}{green}
+         \end{Karnaughvuit}
+         \begin{Karnaughvuit}
+            \minterms{0,4,5}
+             \maxterms{1,3,7}
+            \indeterminats{2,6}
+            \implicant{0}{4}{red}
+            \implicant{4}{5}{green}
+         \end{Karnaughvuit}
+         \caption{Maps for $Y$ (left), $B_1$ (center) and $B_2$ (right) functions.}
+    \end{center}
+    \end{figure}
+    Where from the left table $Y = \overline{y} \cdot \overline{S} \cdot I + y \cdot \overline{I} + y \cdot S$. 
+    From the center table $B_1 = \overline{y} \cdot \overline{S} + \overline{S} \cdot \overline{I}$, and from the 
+    right table $B_2 = \overline{S} \cdot \overline{I} + y \cdot \overline{S}$.

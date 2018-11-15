@@ -128,59 +128,10 @@ the driver circuit is as shown below.
     \caption{Driver for LED output.}
 \end{figure}
 
-\subsection*{Level shifter for inputs}
-From the implemented circuit:
-\begin{figure}[H]
-    \begin{centering}
-    \includegraphics[width=0.6\textwidth]{data/Graficos3/CLK_Driver.png}
-    \par\end{centering}
-    \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
-\end{figure}
-
-Usign for $I_{SAT} = 1mA$, considerating $VCE_{SAT} = 0.2V$, 
-the equation from the out mesh:
-
-$$3.3V - VCE_{SAT} - I_{SAT}R_1 = 0$$
-$$\frac{3.3V - VCE_{SAT}}{I_{SAT}} = R_1 = 3.1K\Omega$$
-Normalizing we have $R_1 = 3.3K\Omega$.
-Considering $HFE_{MIN} = 100$, from the input mesh:
-
-$$5V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_2 = 0$$
-$$\frac{5V - VBE_{ON}}{I_C}HFE_{MIN} = R_2 = 430K\Omega$$
-Normalizing we have $R_2 = 390K\Omega$.
-
-\subsection*{Driver for output led}
-Taking the implemented circuit:
-
-\begin{figure}[H]
-    \begin{centering}
-    \includegraphics[width=0.4\textwidth]{data/Graficos3/LED_Driver.png}
-    \par\end{centering}
-    \caption{Driver for LED output.}
-\end{figure}
-
-Usign for $I_{LED} = 10mA$, considerating $VCE_{SAT} = 0.2V$ 
-and $V{LED} = 2V$, the equation from the out mesh:
-
-$$3.3V - V_{LED} - VCE_{SAT} - I_{LED}R_3 = 0$$
-$$\frac{3.3V - V_{LED} - VCE_{SAT}}{I_{LED}} = R_3 = 110\Omega$$
-Normalizing we have $R_3 = 220\Omega$.
-Considering $HFE_{MIN} = 100$, from the input mesh:
-
-$$3.3V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_4 = 0$$
-$$\frac{3.3V - VBE_{ON}}{I_C}HFE_{MIN} = R_4 = 26K\Omega$$
-Normalizing we have $R_4 = 22K\Omega$, to guarantee saturation.
-
-
+The design of the circuit is described in the $Annex$.
 \subsection *{Verilog tests}
 This task was tested using verilog tests. Here we show the results of Moore and Mealy's implementations.
-
-\begin{figure}[H]
-    \begin{centering}
-    \includegraphics[width=0.7\textwidth]{data/Graficos3/3a.png}
-    \par\end{centering}
-    \caption{Mealy state machine - Verilog test results}
-\end{figure}
+For extra support, it was always simulated on Proteus.
 
 \begin{figure}[H]
     \begin{centering}
@@ -189,7 +140,15 @@ This task was tested using verilog tests. Here we show the results of Moore and 
     \caption{Moore state machine - Verilog test results}
 \end{figure}
 
-They seem correct.
+\begin{figure}[H]
+    \begin{centering}
+    \includegraphics[width=0.7\textwidth]{data/Graficos3/3a.png}
+    \par\end{centering}
+    \caption{Mealy state machine - Verilog test results}
+\end{figure}
+
+
+
 
 
 

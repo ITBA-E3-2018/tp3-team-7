@@ -1,28 +1,24 @@
-% ANNEX3
-\input{baseHoja.tex}
-\input{BaseKarnaugh3.tex}
-\begin{document}
-
+\newpage
 \subsection*{Karnaugh's maps for Task 3}
 For the Moore's state machine implementation:
 
 
 \begin{figure}[H]
     \begin{center}
-         \begin{Karnaughvuit}
+         \begin{KarnaughvuitV3}
             \minterms{5,6}
              \maxterms{0,1,2,4}
              \indeterminats{3,7}
             \implicant{7}{6}{red}
             \implicant{5}{7}{green}
-         \end{Karnaughvuit}
-         \begin{Karnaughvuit}
+         \end{KarnaughvuitV3}
+         \begin{KarnaughvuitV3}
             \minterms{2,4,7}
             \maxterms{0,1,3,5,6}
             \implicantsol{2}{red}
             \implicantsol{4}{green}
             \implicantsol{7}{blue}
-         \end{Karnaughvuit}
+         \end{KarnaughvuitV3}
          \caption{Maps for $Y_2$ (left) and $Y_1$ (right) functions.}
     \end{center}
     \end{figure}
@@ -33,16 +29,16 @@ And for the Mealy's state machine implementation:
 
 \begin{figure}[H]
     \begin{center}
-     \begin{Karnaughquatre}
+     \begin{KarnaughquatreV3}
          \minterms{1,3}
         \maxterms{0,2}
         \implicant{1}{3}{red}
-     \end{Karnaughquatre}
-     \begin{Karnaughquatre}
+     \end{KarnaughquatreV3}
+     \begin{KarnaughquatreV3}
         \minterms{1}
        \maxterms{0,2,3}
        \implicantsol{1}{red}
-    \end{Karnaughquatre}
+    \end{KarnaughquatreV3}
      \caption{Maps for $Y$ (left) and $Z$ (right)}
     \end{center}
 \end{figure}
@@ -54,7 +50,7 @@ table $Z = \overline{y} \cdot W$.
 From the implemented circuit:
 \begin{figure}[H]
     \begin{centering}
-    \includegraphics[width=0.6\textwidth]{data/Graficos3/CLK_Driver.png}
+    \includegraphics[width=0.5\textwidth]{data/Graficos3/CLK_Driver.png}
     \par\end{centering}
     \caption{Level shifter for CLK from 5V to 3.3V (VCC)}
 \end{figure}
@@ -69,8 +65,8 @@ Considering $HFE_{MIN} = 100$, from the input mesh:
 
 $$5V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_2 = 0$$
 $$\frac{5V - VBE_{ON}}{I_C}HFE_{MIN} = R_2 = 430K\Omega$$
-Normalizing we have $R_2 = 390K\Omega$.
-
+Normalizing we have $R_2 = 390K\Omega$. The same circuit is 
+for adapting W input.
 \subsection*{Driver for output led}
 Taking the implemented circuit:
 
@@ -93,6 +89,3 @@ $$3.3V - VBE_{ON} - \frac{I_C}{HFE_{MIN}}R_4 = 0$$
 $$\frac{3.3V - VBE_{ON}}{I_C}HFE_{MIN} = R_4 = 26K\Omega$$
 Normalizing we have $R_4 = 22K\Omega$, to guarantee saturation.
 
-
-
-\end{document}
