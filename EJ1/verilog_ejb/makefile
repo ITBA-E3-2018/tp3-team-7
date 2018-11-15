@@ -1,7 +1,7 @@
 # This makefile is inspired from: https://stackoverflow.com/questions/7004702/how-can-i-create-a-makefile-for-c-projects-with-src-obj-and-bin-subdirectories
 
 # project name (generate executable with this name)
-TARGET   = ej1
+TARGET   = ej1b
 
 COMPILER = iverilog
 CFLAGS   = 
@@ -20,7 +20,7 @@ all: $(BINDIR)/$(TARGET) $(SOURCES)
 $(BINDIR)/$(TARGET): $(SOURCES)
 	@mkdir -p bin
 	@$(COMPILER) $(SOURCES) $(CFLAGS) -o $@
-	@echo "Compilation complete - bin/trigger_enable!"
+	@echo "Compilation complete - bin/ej1b!"
 
 .PHONY: clean
 clean: 
