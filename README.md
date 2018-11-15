@@ -6,7 +6,7 @@ There are only three folders with all project content that are
 - doc: contains project tex files for each task
 - data: contains project aditional resources (images, pdfs) files
 - EJ1/verilog: contains the verilog codes for task 1a.
-- EJ1/verilog_ejb: contains the verilog codeds for task 1b
+- EJ1/verilog_ejb: contains the verilog codes for task 1b
 - EJ2/verilog: contains the verilog codes for task 2a.
 - EJ2/verilog_ejb: contains the verilog codeds for task2b
 - EJ3/verilog: contains the verilog codes for task 3a
